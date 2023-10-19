@@ -54,7 +54,7 @@ const OnboordingScreen = ({ navigation }) => {
         keyExtractor={(item) => item.id}
       />
       <TouchableOpacity
-        
+        onPress={()=>navigation.navigate('HomeScreen')}
         style={{
           padding: 12,
           position: "absolute",
@@ -78,7 +78,7 @@ const OnboordingScreen = ({ navigation }) => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
-        
+        onPress={()=>navigation.navigate('HomeScreen')}
         style={{
           height: 40,
           
