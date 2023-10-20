@@ -1,11 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { View } from 'react-native'
 import { styles } from '../../../styles/styles'
+import PropertyListComponent from '../components/PropertyListComponent'
+import SearchbarComponent from '../components/SearchbarComponent'
 
 const HomeScreen = () => {
+
   return (
     <View style={styles.Container}>
-      <Text>HomeScreen</Text>
+      <View>
+        <SearchbarComponent />
+      </View>
+
+      <View>
+        <PropertyListComponent />
+      </View>
+
     </View>
   )
 }
